@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publica Academy — Course Registration</title>
+</head>
+<body>
+    <h1>Register for a Course</h1>
+
+    <form action="#" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label>
+            Email Address:
+            <input type="email" name="email">
+        </label>
+
+        <fieldset>
+            <legend>Areas of Interest:</legend>
+            <label>
+                <input type="checkbox" name="interest" value="webdev"> Web Development
+            </label>
+            <label>
+                <input type="checkbox" name="interest" value="data"> Data Analysis
+            </label>
+            <label>
+                <input type="checkbox" name="interest" value="design"> Design
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience Level:</legend>
+            <label>
+                <input type="radio" name="level" value="beginner"> Beginner
+            </label>
+            <label>
+                <input type="radio" name="level" value="intermediate"> Intermediate
+            </label>
+            <label>
+                <input type="radio" name="level" value="advanced"> Advanced
+            </label>
+        </fieldset>
+
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="">-- Select --</option>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">Abuja (FCT)</option>
+            <option value="rivers">Rivers</option>
+            <option value="kano">Kano</option>
+            <option value="oyo">Oyo</option>
+            <option value="enugu">Enugu</option>
+        </select>
+
+        <label for="bio">Why do you want to join?</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself..."></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

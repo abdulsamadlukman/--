@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Format Comparison</title>
+</head>
+<body>
+    <h1>Choosing the Right Image Format</h1>
+
+    <h2>A Photo: JPEG vs. WebP</h2>
+
+    <p>The same photograph, saved in two different formats. Open DevTools' Network tab
+       and reload to see each file's real size.</p>
+
+    <h3>JPEG</h3>
+    <img src="skyline.jpg" alt="A stylised sunset skyline" width="400" height="250">
+
+    <h3>WebP</h3>
+    <img src="skyline.webp" alt="The same sunset skyline, saved as WebP" width="400" height="250">
+
+    <h2>A Logo: Why PNG</h2>
+
+    <p>This logo has a transparent background. You can't fully see it here yet, since this
+       page has no colour behind it — once CSS backgrounds are introduced, transparent PNGs
+       like this one will sit cleanly on top of any colour or pattern. JPEG cannot do this
+       at all; it always fills in a solid background.</p>
+
+    <img src="logo.png" alt="Tolu's Design Studio logo, on a transparent background" width="150" height="150">
+
+    <h2>An Icon: Why SVG</h2>
+
+    <p>The same icon, twice — once tiny, once huge. Both stay perfectly sharp, because
+       SVG isn't a grid of pixels, it's a set of drawing instructions the browser draws
+       fresh at any size.</p>
+
+    <img src="search-icon.svg" alt="A search icon" width="24" height="24">
+    <img src="search-icon.svg" alt="The same search icon, much larger" width="300" height="300">
+</body>
+</html>
